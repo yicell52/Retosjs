@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: cornflowerblue;
+}
+
+.empty {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 0;
+    margin: 10px;
+}
+
+.fill {
+    width: 400px;
+    height: 400px;
+    background-image: url("https://st.depositphotos.com/1020341/4233/i/600/depositphotos_42333899-stock-photo-portrait-of-huge-beautiful-male.jpg");
+    cursor: pointer;
+    background-size: 100%;
+}
+
+.hold {
+    border: solid 5px #ccc;
+}
+
+.hovered {
+    background-color: #f4f4f4;
+    border-style: dashed;
+}
+
+@media (max-width: 800px) {
+    .empty {
+        width: 100px;
+        height: 100px;
+        margin: 5px;
+    }
+    .fill {
+        width: 100px;
+        height: 100px;
+        background-image: url("https://i.pinimg.com/originals/67/54/78/675478c7dcc17f90ffa729387685615a.jpg");
+        background-size: 100%;
+    }
+}
